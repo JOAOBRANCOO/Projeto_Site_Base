@@ -4,11 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Historical Releases</title>
+    <title>Historical Releases - Saiba mais</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="src/css/global.css">
     <link rel="stylesheet" href="src/css/  sections/home.css">
     <link rel="stylesheet" href="src/css/reset.css">
-    <link rel="stylesheet" href="src/css/global.css">
     <link rel="stylesheet" href="sections/home.css">
     <link rel="stylesheet" href="sections/imprensa.css">
     <link rel="stylesheet" href="sections/sobre.css">
@@ -20,6 +20,7 @@
     <link rel="stylesheet" href="src/css/  sections/produtos.css">
     <link rel="stylesheet" href="src/css/  sections/contatos.css">
     <link rel="stylesheet" href="src/css/  sections/footer.css">
+    <link rel="stylesheet" href="src/css/  sections/saiba+.css">
 
     <link rel="stylesheet" href="src/css/registro.css">
 
@@ -56,53 +57,17 @@
             </nav>
         </div>
     </header>
-
-    <section class="hero">
-        <div id="main-registro">
-            <form id="form">           
-                <label for="name" class="label-regi">Digite seu nome:</label><br>
-                <input type="text" id="name" class="input-regi"><br><br>
-
-                <label for="email" class="label-regi">Digite seu e-mail:</label><br>
-                <input type="email" id="email" placeholder="exemple@gmail.com" class="input-regi"><br><br>
-
-                <label for="senha" class="label-regi">Digite sua senha:</label><br>
-                <input type="password" id="senha" class="input-regi"><br><br>
-
-                <label for="confirm_senha" class="label-regi">Confirme sua senha:</label><br>
-                <input type="password" id="confirm_senha" class="input-regi"><br><br>
-                
-                <button type="button" class="limpar" onclick="limparCampos()">LIMPAR</button>
-                <button type="button" class="submit" onclick="verifica(event)">REGISTRAR</button>
-            </form>
-        </div>
-    </section>
-    <div id="registro-principal">
-        <div>
-            <!-- Tabela de registros, inicialmente escondida -->
-            <div id="registros" style="display: none;">
-                <h2 id="h2-regi">Registros:</h2>
-                <div id="tabela-container">
-                    <table id="tabela-registros">
-                        <!-- Adicione a coluna de nome na tabela -->
-                        <thead>
-                            <tr>
-                                <th>Nome</th>
-                                <th>Email</th>
-                                <th>Senha</th>
-                            </tr>
-                        </thead>
-
-                        <tbody>
-                            <!-- Registros serão adicionados aqui -->
-                        </tbody>
-                    </table>
-                </div>
-            </div>        
+    <div class="principal-saiba">
+        <section class="saiba-img-nike"></section>
+        <div class="text-container">
+            <h1>Nike: Inovação e Performance em Cada Passo</h1>
+            <p>A Nike, fundada em 1964 por Bill Bowerman e Phil Knight, é sinônimo de inovação, desempenho e estilo. Com seu icônico logotipo "swoosh" e o slogan "Just Do It", a marca se consolidou como líder no universo dos esportes e da moda. Seus tênis são projetados para atender a uma vasta gama de esportes, desde corrida até basquete e futebol, sempre com foco em melhorar o desempenho do atleta.</p>
+            
+            <p>Modelos como o Nike Air Max, famoso por sua tecnologia de amortecimento, e o Nike ZoomX, usado por corredores de elite, oferecem conforto e suporte superiores. A Nike também é pioneira em inovação tecnológica, com o uso de tecidos leves e respiráveis, e solados projetados para máximo desempenho. Além disso, a marca se preocupa com a sustentabilidade, utilizando materiais reciclados e desenvolvendo produtos mais eficientes para o meio ambiente.</p>
+    
+            <p>Combinando funcionalidade, estilo e qualidade, os tênis Nike continuam sendo uma escolha favorita entre atletas e fashionistas, sempre com um design que se destaca nas ruas e nas quadras.</p>
         </div>
     </div>
-        <script src="script.js"></script>
-    </div>
+    
+    
 </body>
-</html>
-        

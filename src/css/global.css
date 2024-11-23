@@ -110,48 +110,54 @@ body{
 
 /* serviços */
 
-.servicos{
+.servicos {
     display: grid;
     grid-template-columns: 1fr 1fr;
     max-width: var(--max-width-size);
     font-family: var(--fonte-titulo);
+    gap: 20px; /* Adiciona espaçamento entre as colunas */
 }
 
-.servicos .image{
-    height: 100%;
-    width: 100%;
-}
-
-.servicos .item{
-    padding: 20%;
+.servicos .item {
+    padding: 10%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items:center ;
+    justify-content: flex-start;  /* Alinha o conteúdo para cima */
+    align-items: center;
+    text-align: left;
 }
 
-.servicos .item p{
+.servicos .item img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px; /* Espaçamento entre a imagem e o texto */
+}
+
+.servicos .item p {
     font-weight: 400;
     font-size: 1.8rem;
-    margin: 30px 0;
+    margin: 20px 0;
     font-family: var(--fonte-titulo-2);
 }
 
-.servicos .item .btn-know-more{
+.servicos .item .btn-know-more {
     font-size: 1.6rem;
     align-self: flex-start;
+    margin-top: 20px; /* Adiciona um espaço entre o texto e o botão */
 }
 
-.servicos .item .btn-know-more:hover{
+.servicos .item .btn-know-more:hover {
     font-weight: 700;
 }
 
-.servicos .image.right{
-    background: url('../images/hidroponia.jpeg') center center no-repeat;
+.servicos .image.right {
+    background: url('../images/img-tenis/adidas.jpg') center center no-repeat;
     background-size: cover;
+    height: 300px; /* Defina uma altura fixa para as imagens */
 }
 
-.servicos .image.left{
+.servicos .image.left {
     background: url('../images/gps.jpeg') center center no-repeat;
     background-size: cover;
+    height: 300px; /* Defina uma altura fixa para as imagens */
 }

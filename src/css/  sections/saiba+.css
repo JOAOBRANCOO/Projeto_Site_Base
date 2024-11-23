@@ -1,0 +1,129 @@
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-size: 1.6rem;
+    font-weight: 400;
+}
+
+/* hader */
+
+.header{
+    background-color: var(--cor-2);
+    font-family:var(--fonte-titulo);
+}
+
+.header-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 40px;
+    min-height: 75px;
+}
+
+.header h1{
+    font-size: 3rem;
+    font-weight: 700;
+    transition: 0.3s;
+    color:var(--cor-3);
+}
+
+.header a:hover h1{
+    color:var(--cor-4);
+}
+
+
+.text-container {
+    width: 50%; /* Ajusta a largura do texto */
+    padding: 20px; /* Adiciona um espaçamento interno */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start; /* Garante que o texto fique alinhado à esquerda */
+    background-color: rgba(255, 255, 255, 0.8); /* Adiciona um fundo transparente ao texto para melhor contraste */
+    color: var(--cor-3); /* Cor do texto */
+    font-family: var(--fonte-titulo);
+}
+
+.text-container h1 {
+    font-size: 3.6rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: black;
+}
+
+.text-container p {
+    font-size: 1.8rem;
+    margin-bottom: 15px; 
+    line-height: 1.6; 
+    color: black;
+}
+
+.principal-saiba {
+    display: flex;
+    flex-direction: row; 
+}
+
+
+@-webkit-keyframes downarrow{
+    0%{
+        -webkit-transform: translateY(0);
+        opacity: 0.4;
+    }
+    100%{
+        -webkit-transform: translateY(1em);
+        opacity: 0.9;
+    }
+}
+
+/* IMGsssssssssssssssssssssssssssssssssssssssss  saiba mais  */
+
+/* ADIDAS */
+.saiba-img-adidas {
+    width: 50%; /* Ajusta a largura da imagem */
+    height: 100vh;
+    background: url(../../images/img-tenis/adidas.jpg) no-repeat center center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+/* NIKE */
+.saiba-img-nike {
+    width: 50%; /* Ajusta a largura da imagem */
+    height: 100vh;
+    background: url(../../images/img-tenis/WhatsApp\ Image\ 2024-11-23\ at\ 03.18.50\(1\).jpeg) no-repeat center center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+/* NEW BALANCE */
+.saiba-img-newbalance {
+    width: 50%; /* Ajusta a largura da imagem */
+    height: 100vh;
+    background: url(../../images/img-tenis/New\ Balance.jpg) no-repeat center center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+/* MIZUNO */
+.saiba-img-mizuno {
+    width: 50%; /* Ajusta a largura da imagem */
+    height: 100vh;
+    background: url(../../images/img-tenis/a3aefb053aadff4c316368994afd8eb6.jpg) no-repeat center center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
