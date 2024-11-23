@@ -1,51 +1,157 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chalé Hotel</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="src/css/  sections/home.css">
+    <link rel="stylesheet" href="src/css/reset.css">
+    <link rel="stylesheet" href="src/css/global.css">
+    <link rel="stylesheet" href="sections/home.css">
+    <link rel="stylesheet" href="sections/imprensa.css">
+    <link rel="stylesheet" href="sections/sobre.css">
+    <link rel="stylesheet" href="sections/contato.css">
+    <link rel="stylesheet" href="src/css/variables.css">
+    <link rel="stylesheet" href="src/css/  sections/header.css">
+    <link rel="stylesheet" href="src/css/  sections/hero.css">
+    <link rel="stylesheet" href="src/css/  sections/servicos.css">
+    <link rel="stylesheet" href="src/css/  sections/produtos.css">
+    <link rel="stylesheet" href="src/css/  sections/contatos.css">
+    <link rel="stylesheet" href="src/css/  sections/footer.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,200;0,300;1,400&family=Roboto:wght@300;400;700&display=swap"
+        rel="stylesheet">
 </head>
-<body id="home-page">
-    <header id="header">
-        <div id="logo">Historic Launch Shoe</div>
-        <nav id="nav">
-            <ul>
-                <li><a href="home.html">Home</a></li>
-                <li><a href="#imprensa">Imprensa</a></li>
-                <li><a href="sobre.html">Sobre</a></li>
-                <li><a href="contato.html">Contato</a></li>
-            </ul>
-        </nav>
-        <a id="reserve-button" href="registro.html">PRÉ-REGISTRO</a>
-        <div id="quote">
-            <p>"Maiores lançamentos historicos de tenis"</p>
-            <p>João Vitor Branco</p>
+
+<body>
+    <header class="header">
+        <div class="header-container">
+
+            <a href="#">
+                <h1 class="logo">
+                    JOÃO BRANCO
+                </h1>
+            </a>
+            <nav>
+                <input type="checkbox" id="menu-hamburguer" />
+                <label for="menu-hamburguer">
+                    <div class="menu">
+                        <span class="hamburguer"></span>
+                    </div>
+                </label>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#produtos">Produtos</a></li>
+                    <li><a href="#servicos">serviços</a></li>
+                    <li><a href="#contatos">contatos</a></li>
+                </ul>
+            </nav>
         </div>
-        <!-- <div id="location">Rio de Janeiro - São Paulo - Belo Horizonte</div> -->
     </header>
-    <main id="main-content">
-        <section id="content">
-            <h2>Conteúdo sobre o tema</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc id congue velit, in cursus augue. Morbi vel orci mattis, condimentum arcu in, sodales ligula. Quisque sollicitudin erat vulputate libero fermentum, eu gravida velit mollis. Sed sed viverra nunc. Duis in elit sit amet ex feugiat lacinia.</p>
-        </section>
-        <aside id="sidebar">
-            <div class="sidebar-item">
-                <div class="image-placeholder" id="tenis-nike"></div>
-                <a href="#apartamento">Nike</a>
+
+    <section class="hero">
+        <h2>Maiores lançamentos historicos de tenis</h2>
+        <p>Aproveite os melhores descontos</p>
+    </section>
+
+    <section class="produtos" id="produtos">
+        <div class="container">
+            <div class="row">
+                <div class="section-title">
+                    <h2>tenis</h2>
+                </div>
             </div>
-            <div class="sidebar-item">
-                <div class="image-placeholder" id="tenis-newbalance"></div>
-                <a href="#restaurante">New Balance</a>
+
+            <div class="container-produtos">
+                <div class="produto">
+                    <a href="#">
+                        <img src="src/images/img-tenis/adidas.jpg" alt="img-tenis" />
+                        <div class="informacoes-produto">
+                            <p>Da fazenda para sua mesa</p>
+                            <p>R$: 0,00</p>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="produto">
+                    <a href="#">
+                        <img src="src/images/img-tenis/New Balance.jpg" alt="img-tenis" />
+                        <div class="informacoes-produto">
+                            <p>Da fazenda para sua mesa</p>
+                            <p>R$: 0,00</p>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="produto">
+                    <a href="#">
+                        <img src="src/images/img-tenis/a3aefb053aadff4c316368994afd8eb6.jpg" alt="" />
+                        <div class="informacoes-produto">
+                            <p>Da fazenda para sua mesa</p>
+                            <p>R$: 0,00</p>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="produto">
+                    <a href="#">
+                        <img src="src/images/img-tenis/WhatsApp Image 2024-11-23 at 03.18.50(1).jpeg" alt="vages" />
+                        <div class="informacoes-produto">
+                            <p>Da fazenda para sua mesa</p>
+                            <p>R$: 0,00</p>
+                        </div>
+                    </a>
+                </div>
             </div>
-            <div class="sidebar-item">
-                <div class="image-placeholder" id="tenis-adidas"></div>
-                <a href="#piscina">Adidas</a>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="section-title">
+                    <h2>serviços</h2>
+                </div>
             </div>
-        </aside>
-    </main>
-    <footer id="footer">
-        <p>© Copyright 1900-2024 Historic Launch Shoe</p>
+    </section>
+
+    <section class="servicos" id="servicos">
+        <div class="item">
+            <h3>Hidroponia</h3>
+            <p> é o nome dado a um sistema de cultivo de plantas caracterizado por não precisar de terra (solo). As
+                raizes das plantas ficam dentro da água. Soluções fertilizantes são adicionadas à água para alimentar as
+                plantas.</p>
+            <a href="" class="btn-know-more">Saiba mais</a>
+        </div>
+        <div class="image right"></div>
+        <div class="image left"></div>
+        <div class="item">
+            <h3>Agrotech</h3>
+            <p>Quando você garante maior produtividade em menor espaço físico e tempo e gastando menos, está não apenas
+                tendo uma vantagem competitiva e sobrevivendo no mercado, mas também atendendo uma demanda que não para
+                de crescer.</p>
+            <a href="" class="btn-know-more">Saiba mais</a>
+        </div>
+    </section>
+
+    <footer class="footer" id="contatos">
+        <h4>JOÃO BRANCO</h4>
+
+        <div class="social">
+            <h3>Redes Sociais</h3>
+            <a href="#">
+                <i class="fab fa-facebook-square"></i></a>
+            <a href="#">
+                <i class="fab fa-instagram"></i></a>
+            <a href="#">
+                <i class="fab fa-twitter-square"></i></a>
+        </div>
     </footer>
 </body>
+
 </html>

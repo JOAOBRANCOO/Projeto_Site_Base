@@ -1,0 +1,157 @@
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-size: 1.6rem;
+    font-weight: 400;
+}
+
+/* hader */
+
+.header{
+    background-color: var(--cor-2);
+    font-family:var(--fonte-titulo);
+}
+
+.header-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 40px;
+    min-height: 75px;
+}
+
+.header h1{
+    font-size: 3rem;
+    font-weight: 700;
+    transition: 0.3s;
+    color:var(--cor-3);
+}
+
+.header a:hover h1{
+    color:var(--cor-4);
+}
+
+/* hero */
+
+.hero{
+    height: 89vh;
+    background: url('../images/img-tenis/WhatsApp\ Image\ 2024-11-23\ at\ 02.50.01.jpeg') no-repeat center center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.hero h2{
+    font-size: 4rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    color:var(--cor-3);
+    font-family: var(--fonte-titulo);
+    border: solid 2px;
+    background-color: var(--cor-2);
+    padding: 10px;
+}
+
+.hero::after{
+    content: url('../images/seta_preta.png');
+    height: 35px;
+    bottom: 40px;
+    position: absolute;
+    animation: downarrow 0.6s infinite alternate ease-in-out;
+}
+
+@-webkit-keyframes downarrow{
+    0%{
+        -webkit-transform: translateY(0);
+        opacity: 0.4;
+    }
+    100%{
+        -webkit-transform: translateY(1em);
+        opacity: 0.9;
+    }
+}
+
+/* produtos */
+
+.section-title {
+    text-align: center;
+    flex: 0 0 100%;
+    max-width: 100%;
+    padding: 60px 0;
+}
+
+.section-title h2 {
+    font-size:3rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    border: solid 2px;
+    background-color: var(--cor-2);
+    padding: 10px;
+    color: var(--cor-3);
+    font-family: var(--fonte-titulo);
+}
+
+.container {
+    max-width: 1140px;
+    margin: auto;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+
+/* serviços */
+
+.servicos{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: var(--max-width-size);
+    font-family: var(--fonte-titulo);
+}
+
+.servicos .image{
+    height: 100%;
+    width: 100%;
+}
+
+.servicos .item{
+    padding: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center ;
+}
+
+.servicos .item p{
+    font-weight: 400;
+    font-size: 1.8rem;
+    margin: 30px 0;
+    font-family: var(--fonte-titulo-2);
+}
+
+.servicos .item .btn-know-more{
+    font-size: 1.6rem;
+    align-self: flex-start;
+}
+
+.servicos .item .btn-know-more:hover{
+    font-weight: 700;
+}
+
+.servicos .image.right{
+    background: url('../images/hidroponia.jpeg') center center no-repeat;
+    background-size: cover;
+}
+
+.servicos .image.left{
+    background: url('../images/gps.jpeg') center center no-repeat;
+    background-size: cover;
+}
