@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REGISTRO</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body id="registro-principal">
+    <div>
+        <div id="main-registro">
+            <form id="form">
+                <label for="E-mail" class="label-regi">Digite seu e-mail:</label><br>
+                <input type="email" id="email" for="email" placeholder="exemple@gmail.com" class="input-regi"><br><br>
+
+                <label for="senha" class="label-regi">Digite sua senha:</label><br>
+                <input type="text" name="senha" id="senha" class="input-regi"><br><br>
+
+                <label for="confirm_senha" class="label-regi">Confirme sua senha:</label><br>
+                <input type="text" name="confirm_senha" id="confirm_senha" class="input-regi"><br><br>
+                
+                <button type="button" class="limpar" onclick="limparCampos()">LIMPAR</button>
+                <button type="button" class="submit" onclick="verifica(event)" >REGISTRAR</button>
+            </form>
+        </div>
+
+        <!-- Tabela de registros, inicialmente escondida -->
+        <div id="registros" style="display: none;">
+            <h2 id="h2-regi">Registros:</h2>
+            <div id="tabela-container">
+                <table id="tabela-registros">
+                    <thead>
+                        <tr>
+                            <th>Email</th>
+                            <th>Senha</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Registros serão adicionados aqui -->
+                    </tbody>
+                </table>
+            </div>
+        </div>        
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

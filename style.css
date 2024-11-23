@@ -1,0 +1,287 @@
+/* CAMPO REGISTRO */
+#registro-principal {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column; /* Altera para coluna para permitir a rolagem */
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Garante que o corpo ocupe pelo menos a altura total da janela */
+    background-color: #f0f0f0;
+    background-image: url('img/background-regi.avif'); /* Certifique-se de que o caminho da imagem esteja correto */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#main-registro {
+    background-color: rgba(255, 255, 255, 0.838); /* Fundo branco com leve transparência */
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    width: 400px;
+    text-align: center;
+    margin-bottom: 20px; /* Adiciona margem inferior para espaçamento */
+}
+
+.label-regi {
+    font-size: 18px;
+    color: #000000c2;
+}
+
+.img-registro-certo {
+    background-image: url(img/certo.jpg);
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 20px;
+}
+
+.img-registro-errado {
+    background-image: url(img/errado.png);
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 20px;
+}
+
+.input-regi {
+    width: 93%;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #dddddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+input:focus {
+    background-color: #e6f7ff;
+    border-color: #66b2ff;
+}
+
+button.submit {
+    background-color: #66b2ff;
+    color: white;
+    border: none;
+    padding: 15px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 10px;
+}
+
+button.submit:hover {
+    background-color: #5599e6;
+}
+
+button.limpar {
+    background-color: #ff9900; /* Laranja */
+    color: white;
+    border: none;
+    padding: 15px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 10px;
+}
+
+button.limpar:hover {
+    background-color: #cf7e04;
+}
+
+/* TITULO DA TABELA */
+#h2-regi {
+    text-align: center;
+    margin-top: 30px;
+    color: #333;
+    background-color: #4eff42c0;
+    padding: 10px 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* CAMPO DA TABELA */
+#registros {
+    margin-top: 30px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#tabela-container {
+    max-height: 400px; /* Defina a altura máxima para o contêiner */
+    overflow-y: auto; /* Adicione rolagem vertical */
+    width: 80%;
+    box-shadow: 0 2px 5px rgb(255, 255, 255); /* Mantenha a sombra desejada */
+    margin: 0 auto; /* Centralizar o contêiner */
+}
+
+#tabela-registros {
+    width: 100%; /* Certifique-se de que a tabela ocupe toda a largura do contêiner */
+    border-collapse: collapse;
+}
+
+#tabela-registros th, #tabela-registros td {
+    border: 1px solid #00ffd56d;
+    padding: 8px;
+    text-align: left;
+}
+
+#tabela-registros th {
+    background-color: #00ffd50f;
+    position: sticky; /* Mantenha os cabeçalhos fixos */
+    top: 0; /* Posicione os cabeçalhos no topo */
+    z-index: 1; /* Garanta que os cabeçalhos fiquem acima do conteúdo */
+}
+
+#tabela-registros thead th {
+    background-color: #ffffffc5; /* Certifique-se de que a cor de fundo do cabeçalho está definida */
+    color: #000000;
+}
+
+#tabela-registros tbody tr:nth-child(even) {
+    background-color: #d3d3d3;
+}
+
+#tabela-registros tbody tr:nth-child(odd) {
+    background-color: #fff;
+}
+
+#tabela-registros tbody tr:hover {
+    background-color: #f1f1f1;
+}
+
+
+
+/* ************************************************************************************************************ */
+/* CAMPO DE HOME */
+
+/* Estilos Gerais */
+#home-page {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Cabeçalho */
+#header {
+    background-color: #cf7e04;
+    background-image: url('img/background-menu.jpg'); /* Certifique-se de que o caminho da imagem esteja correto */
+    background-size: cover;
+    color: white;
+    padding: 100px;
+    text-align: center;
+    position: relative;
+}
+
+#logo {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+#nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+}
+
+#nav ul li {
+    margin: 0 15px;
+}
+
+#nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+#reserve-button {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: red;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+#quote {
+    margin-top: 20px;
+}
+
+#location {
+    margin-top: 10px;
+}
+
+/* Conteúdo Principal */
+#main-content {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+#content {
+    flex: 70%;
+}
+
+#sidebar {
+    flex: 25%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.sidebar-item {
+    margin-bottom: 20px;
+}
+
+.image-placeholder {
+    width: 100%;
+    height: 270px;
+    background-color: #ccc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.sidebar-item a {
+    text-align: center;
+    text-decoration: none;
+    color: #333;
+}
+
+/* IMGS TENIS PRINCIPAL */
+#tenis-nike { 
+    background-image: url('img-tenis/nike.jpg'); 
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat;
+}
+#tenis-newbalance{
+    background-image: url('img-tenis/New\ Balance.jpg'); 
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+}
+#tenis-adidas{
+    background-image: url('img-tenis/adidas.jpg'); 
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+}
+
+/* Rodapé */
+#footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+    margin-top: 40px;
+}
