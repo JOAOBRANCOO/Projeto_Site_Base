@@ -1,4 +1,5 @@
 function verifica(verificado) {
+    let nameField = document.getElementById('name');
     let emailField = document.getElementById('email');
     let senhaField = document.getElementById('senha');
     let confirmSenhaField = document.getElementById('confirm_senha');
@@ -44,23 +45,30 @@ function verifica(verificado) {
         senhaField.classList.remove('img-registro-certo');
         confirmSenhaField.classList.remove('img-registro-certo');
         isValid = false;
+    } else {
+        senhaField.classList.remove('img-registro-errado');
+        confirmSenhaField.classList.remove('img-registro-errado');
+        senhaField.classList.add('img-registro-certo');
+        confirmSenhaField.classList.add('img-registro-certo');
     }
 
     if (!isValid) {
         verificado.preventDefault(); // Impede o envio do formulário se houver campos inválidos
     } else {
-        adicionarRegistro(emailField.value, senhaField.value);
+        adicionarRegistro(nameField.value, emailField.value, senhaField.value);
     }
 }
 
-function adicionarRegistro(email, senha) {
+function adicionarRegistro(nome, email, senha) {
     let registrosDiv = document.getElementById('registros');
     let tabela = document.getElementById('tabela-registros').getElementsByTagName('tbody')[0];
     let novaLinha = tabela.insertRow();
 
-    let colunaEmail = novaLinha.insertCell(0);
-    let colunaSenha = novaLinha.insertCell(1);
+    let colunaNome = novaLinha.insertCell(0);
+    let colunaEmail = novaLinha.insertCell(1);
+    let colunaSenha = novaLinha.insertCell(2);
 
+    colunaNome.textContent = nome;
     colunaEmail.textContent = email;
     colunaSenha.textContent = senha;
 

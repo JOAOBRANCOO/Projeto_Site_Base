@@ -4,11 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Historical Releases</title>
+    <title>Historical Releases - Saiba mais</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="src/css/global.css">
     <link rel="stylesheet" href="src/css/  sections/home.css">
     <link rel="stylesheet" href="src/css/reset.css">
-    <link rel="stylesheet" href="src/css/global.css">
     <link rel="stylesheet" href="sections/home.css">
     <link rel="stylesheet" href="sections/imprensa.css">
     <link rel="stylesheet" href="sections/sobre.css">
@@ -20,6 +20,7 @@
     <link rel="stylesheet" href="src/css/  sections/produtos.css">
     <link rel="stylesheet" href="src/css/  sections/contatos.css">
     <link rel="stylesheet" href="src/css/  sections/footer.css">
+    <link rel="stylesheet" href="src/css/  sections/saiba+.css">
 
     <link rel="stylesheet" href="src/css/registro.css">
 
@@ -56,53 +57,18 @@
             </nav>
         </div>
     </header>
-
-    <section class="hero">
-        <div id="main-registro">
-            <form id="form">           
-                <label for="name" class="label-regi">Digite seu nome:</label><br>
-                <input type="text" id="name" class="input-regi"><br><br>
-
-                <label for="email" class="label-regi">Digite seu e-mail:</label><br>
-                <input type="email" id="email" placeholder="exemple@gmail.com" class="input-regi"><br><br>
-
-                <label for="senha" class="label-regi">Digite sua senha:</label><br>
-                <input type="password" id="senha" class="input-regi"><br><br>
-
-                <label for="confirm_senha" class="label-regi">Confirme sua senha:</label><br>
-                <input type="password" id="confirm_senha" class="input-regi"><br><br>
-                
-                <button type="button" class="limpar" onclick="limparCampos()">LIMPAR</button>
-                <button type="button" class="submit" onclick="verifica(event)">REGISTRAR</button>
-            </form>
-        </div>
-    </section>
-    <div id="registro-principal">
-        <div>
-            <!-- Tabela de registros, inicialmente escondida -->
-            <div id="registros" style="display: none;">
-                <h2 id="h2-regi">Registros:</h2>
-                <div id="tabela-container">
-                    <table id="tabela-registros">
-                        <!-- Adicione a coluna de nome na tabela -->
-                        <thead>
-                            <tr>
-                                <th>Nome</th>
-                                <th>Email</th>
-                                <th>Senha</th>
-                            </tr>
-                        </thead>
-
-                        <tbody>
-                            <!-- Registros serão adicionados aqui -->
-                        </tbody>
-                    </table>
-                </div>
-            </div>        
+    <div class="principal-saiba">
+        <section class="saiba-img-mizuno"></section>
+        <div class="text-container">
+            <h1>Mizuno: Qualidade e Conforto para o Desempenho</h1>
+            <p>A Mizuno, fundada no Japão em 1906, é uma marca conhecida por sua precisão na engenharia de tênis de alta performance. A empresa é famosa por criar produtos que combinam tecnologia avançada com uma grande tradição esportiva. Com foco em conforto e durabilidade, os tênis Mizuno são projetados para atletas que exigem o máximo desempenho de seus calçados.</p>
+            
+            <p>O Mizuno Wave Rider, um dos modelos mais populares da marca, oferece estabilidade e amortecimento excepcionais, sendo um favorito entre corredores. A Tecnologia Wave, patenteada pela Mizuno, proporciona um suporte extra e uma sensação de leveza, permitindo que o atleta se mova com mais liberdade. A Mizuno também investe em materiais de alta qualidade, com solados resistentes e tecnologias que aumentam o conforto, como a AIRmesh, que garante respirabilidade.</p>
+    
+            <p>Ideal para corredores e esportistas que buscam um tênis durável e com excelente performance, a Mizuno continua a ser uma das marcas preferidas entre os entusiastas de esportes.</p>
+    
         </div>
     </div>
-        <script src="script.js"></script>
-    </div>
+    
+    
 </body>
-</html>
-        

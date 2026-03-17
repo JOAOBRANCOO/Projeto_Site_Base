@@ -1,0 +1,138 @@
+
+    #main-registro {
+        background-color: rgba(255, 255, 255, 0.838); /* Fundo branco com leve transparência */
+        border-radius: 15px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        padding: 30px;
+        width: 400px;
+        text-align: center;
+        margin-bottom: 20px; /* Adiciona margem inferior para espaçamento */
+    }
+    
+    .label-regi {
+        font-size: 18px;
+        color: #000000c2;
+    }
+    
+    .img-registro-certo {
+        border: 2px solid green; /* Adicionado apenas para teste */
+        background-color: lightgreen;
+    }
+    
+    .img-registro-errado {
+        border: 2px solid red; /* Adicionado apenas para teste */
+        background-color: pink;
+        
+    }
+    
+    
+    .input-regi {
+        width: 93%;
+        padding: 10px;
+        margin-top: 10px;
+        margin-bottom: 20px;
+        border: 1px solid #dddddd;
+        border-radius: 5px;
+        font-size: 16px;
+    }
+    
+    input:focus {
+        background-color: #e6f7ff;
+        border-color: #66b2ff;
+    }
+    
+    button.submit {
+        background-color: #66b2ff;
+        color: white;
+        border: none;
+        padding: 15px;
+        border-radius: 5px;
+        font-size: 16px;
+        cursor: pointer;
+        width: 100%;
+        margin-top: 10px;
+    }
+    
+    button.submit:hover {
+        background-color: #5599e6;
+    }
+    
+    button.limpar {
+        background-color: #e84727e9; /* Laranja */
+        color: white;
+        border: none;
+        padding: 15px;
+        border-radius: 5px;
+        font-size: 16px;
+        cursor: pointer;
+        width: 100%;
+        margin-top: 10px;
+    }
+    
+    button.limpar:hover {
+        background-color: #ff0000e3;
+    }
+    
+    /* TITULO DA TABELA */
+    #h2-regi {
+        text-align: center;
+        margin-top: 30px;
+        color: #000000;
+        background-color: #82f21390;
+        padding: 10px 20px;
+        border-radius: 10px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+    
+    /* CAMPO DA TABELA */
+    #registros {
+        margin-top: 30px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    
+    #tabela-container {
+        max-height: 400px; /* Defina a altura máxima para o contêiner */
+        overflow-y: auto; /* Adicione rolagem vertical */
+        width: 80%;
+        box-shadow: 0 2px 5px rgb(255, 255, 255); /* Mantenha a sombra desejada */
+        margin: 0 auto; /* Centralizar o contêiner */
+    }
+    
+    #tabela-registros {
+        width: 100%; /* Certifique-se de que a tabela ocupe toda a largura do contêiner */
+        border-collapse: collapse;
+    }
+    
+    #tabela-registros th, #tabela-registros td {
+        border: 1px solid #00ffd5b9;
+        padding: 8px;
+        text-align: left;
+    }
+    
+    #tabela-registros th {
+        background-color: #00ffd5;
+        color: #000000;
+        position: sticky; /* Mantenha os cabeçalhos fixos */
+        top: 0; /* Posicione os cabeçalhos no topo */
+        z-index: 1; /* Garanta que os cabeçalhos fiquem acima do conteúdo */
+    }
+    
+    #tabela-registros thead th {
+        background-color: #00000071; /* Certifique-se de que a cor de fundo do cabeçalho está definida */
+        color: #ffffff;
+    }
+    
+    #tabela-registros tbody tr:nth-child(even) {
+        background-color: #d3d3d3;
+    }
+    
+    #tabela-registros tbody tr:nth-child(odd) {
+        background-color: #fff;
+    }
+    
+    #tabela-registros tbody tr:hover {
+        background-color: #f1f1f1;
+    }
+    

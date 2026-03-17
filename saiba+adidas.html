@@ -4,11 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Historical Releases</title>
+    <title>Historical Releases - Saiba mais</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="src/css/global.css">
     <link rel="stylesheet" href="src/css/  sections/home.css">
     <link rel="stylesheet" href="src/css/reset.css">
-    <link rel="stylesheet" href="src/css/global.css">
     <link rel="stylesheet" href="sections/home.css">
     <link rel="stylesheet" href="sections/imprensa.css">
     <link rel="stylesheet" href="sections/sobre.css">
@@ -20,6 +20,7 @@
     <link rel="stylesheet" href="src/css/  sections/produtos.css">
     <link rel="stylesheet" href="src/css/  sections/contatos.css">
     <link rel="stylesheet" href="src/css/  sections/footer.css">
+    <link rel="stylesheet" href="src/css/  sections/saiba+.css">
 
     <link rel="stylesheet" href="src/css/registro.css">
 
@@ -56,53 +57,19 @@
             </nav>
         </div>
     </header>
-
-    <section class="hero">
-        <div id="main-registro">
-            <form id="form">           
-                <label for="name" class="label-regi">Digite seu nome:</label><br>
-                <input type="text" id="name" class="input-regi"><br><br>
-
-                <label for="email" class="label-regi">Digite seu e-mail:</label><br>
-                <input type="email" id="email" placeholder="exemple@gmail.com" class="input-regi"><br><br>
-
-                <label for="senha" class="label-regi">Digite sua senha:</label><br>
-                <input type="password" id="senha" class="input-regi"><br><br>
-
-                <label for="confirm_senha" class="label-regi">Confirme sua senha:</label><br>
-                <input type="password" id="confirm_senha" class="input-regi"><br><br>
-                
-                <button type="button" class="limpar" onclick="limparCampos()">LIMPAR</button>
-                <button type="button" class="submit" onclick="verifica(event)">REGISTRAR</button>
-            </form>
-        </div>
-    </section>
-    <div id="registro-principal">
-        <div>
-            <!-- Tabela de registros, inicialmente escondida -->
-            <div id="registros" style="display: none;">
-                <h2 id="h2-regi">Registros:</h2>
-                <div id="tabela-container">
-                    <table id="tabela-registros">
-                        <!-- Adicione a coluna de nome na tabela -->
-                        <thead>
-                            <tr>
-                                <th>Nome</th>
-                                <th>Email</th>
-                                <th>Senha</th>
-                            </tr>
-                        </thead>
-
-                        <tbody>
-                            <!-- Registros serão adicionados aqui -->
-                        </tbody>
-                    </table>
-                </div>
-            </div>        
+    <div class="principal-saiba">
+        <section class="saiba-img-adidas"></section>
+        <div class="text-container">
+            <h1>Adidas: Sinônimo de Inovação e Estilo</h1>
+            <p>Fundada em 1949 por Adolf Dassler, a Adidas é uma das marcas mais icônicas do mundo dos esportes e da moda. Reconhecida pelo seu logotipo de três listras, a empresa se destaca por unir tecnologia de ponta, desempenho atlético e design moderno em seus produtos.</p>
+            
+            <p>Os tênis Adidas são desenvolvidos para atender tanto os atletas de elite quanto os entusiastas da moda urbana. Modelos como o Adidas Ultraboost, conhecido pelo seu conforto e retorno de energia, e o clássico Stan Smith, símbolo de estilo atemporal, conquistaram milhões de fãs ao redor do mundo.</p>
+    
+            <p>A marca investe em sustentabilidade, com iniciativas como o uso de materiais reciclados e o desenvolvimento de tênis 100% recicláveis, como o Adidas Futurecraft Loop. Além disso, parcerias com grandes nomes, como Kanye West na linha Yeezy, elevaram os tênis Adidas ao status de itens desejados tanto no esporte quanto na cultura pop.</p>
+    
+            <p>Seja para corrida, basquete, ou para compor um look casual, os tênis Adidas oferecem qualidade incomparável e um compromisso com a inovação que define tendências no mercado global.</p>
         </div>
     </div>
-        <script src="script.js"></script>
-    </div>
+    
+    
 </body>
-</html>
-        
